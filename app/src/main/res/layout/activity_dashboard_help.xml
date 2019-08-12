@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ScrollView android:id="@+id/mainHelpScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dip"
+            >
+            <TextView
+                android:id="@+id/dline1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dashboard Help:"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Members:"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All members of the group can add their friends to the group. All of your friends that are not currently in the group already will show up in the list."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on a username to send a group request to that friend. If they have a pending group request existing from this group, you will not be able to send another."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Leaderboard:"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A descending leaderboard that lists the points of each member is displayed here. Ties are handled with random order."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Wager:"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All possible games to place wagers on are displayed here. The number next to the team name is the multiplier for a wager on that team. If you, for example, place 100 points on a team with a multiplier of 1.50 and they win, then you will receive 150 points for a total gain of 50 points. The start time for each game is also displayed."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on the game to place a wager on either team. You will not be able to place a 0 point wager, nor can you place a wager for more points than you currently have. When you place a wager, the amount of points you have will go down by the amount you placed."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The list of games is updated every day at 8 AM Eastern Time. Games are checked for whether they've started or not every minute."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/dline11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Wagers:"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All of your in progress or ungraded wagers are shown here. The amount you placed, multiplier, and total points gain if your selected team wins are displayed."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on a wager to edit the amount placed. You will not be able to change teams, nor will you be able to reduce or cancel the bet amount. You can only increase the wager amount. The value entered reflects the total wager amount, not the difference"
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/dline14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Game status is checked and wagers are graded every 15 minutes."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="back"
+                android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

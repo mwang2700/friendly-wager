@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="#eff0ec"
+    android:gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_weight="10"
+        android:src="@drawable/ic_addtogroup"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="90"
+        android:weightSum="100"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/request_groupname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="98"
+            android:text="GroupName"
+            android:textAlignment="textStart"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="30"-->
+            <!--android:id="@+id/friend_groupCount"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Groups: 0"-->
+            <!--/>-->
+    </LinearLayout>
+</LinearLayout>

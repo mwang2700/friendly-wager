@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ScrollView android:id="@+id/mainHelpScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dip"
+            >
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help:"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groups:"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Names of the groups you're in are displayed in the list. Click on any of them to open the dashboard for the group. "
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clicking on the Add Group button above the list allows you create a group. Each user in a group starts with 100 points. You cannot be in more than 4 groups"
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friends:"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:padding="2dip"
+            android:layout_weight="1"
+            />
+            <TextView
+                android:id="@+id/line6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usernames of your friends appear in the list. In order to become friends with another user, one person must send a friend request and the recipient must accept."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/line7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Type in the textbox and click Add Friend to send a friend request to another user. This only works for existing users who don't have a friend request from you already."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/line8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Requests:"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/line9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friend and group requests are displayed in lists here. Click on the username of the person who sent the request to either accept or decline."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/line10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You cannot receive group requests if you're already a member of 4 groups."
+                android:textSize="16sp"
+                android:padding="2dip"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="back"
+                android:text="Back" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

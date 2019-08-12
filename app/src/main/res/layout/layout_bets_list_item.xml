@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:background="#89da59"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="10dp">
+
+    <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="65"-->
+        <!--android:id="@+id/friend_email"-->
+        <!--android:textSize="18sp"-->
+        <!--android:lines="1"-->
+        <!--android:text="Example email"-->
+        <!--android:padding="10dp"-->
+        <!--android:textColor="#000"/>-->
+
+    <!--<View-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="3"/>-->
+    <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="32"-->
+        <!--android:id="@+id/friend_groupCount"-->
+        <!--android:textSize="18sp"-->
+        <!--android:lines="1"-->
+        <!--android:text="Groups: 0"-->
+        <!--android:padding="10dp"-->
+        <!--android:textColor="#000"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sport_image"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_weight="10"
+        android:src="@drawable/baseball"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="220"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Team1"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team2"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Team2"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Game Time Here"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/team1multiplier"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="2.00"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/team2multiplier"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="2.00"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="30"-->
+            <!--android:id="@+id/friend_groupCount"-->
+            <!--android:textSize="18sp"-->
+            <!--android:text="Groups: 0"-->
+            <!--/>-->
+    </LinearLayout>
+</LinearLayout>

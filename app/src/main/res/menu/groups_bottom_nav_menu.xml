@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_addtogroup"
+        android:icon="@drawable/ic_addtogroup"
+        android:title="Add Members" />
+    <item
+        android:id="@+id/navigation_leaderboard"
+        android:icon="@drawable/ic_leaderboard"
+        android:title="Leaderboard" />
+
+    <item
+        android:id="@+id/navigation_addWager"
+        android:icon="@drawable/ic_add"
+        android:title="Add Wager" />
+
+    <item
+        android:id="@+id/navigation_viewWagers"
+        android:icon="@drawable/ic_view"
+        android:title="View Wagers" />
+
+</menu>
