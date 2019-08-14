@@ -340,9 +340,9 @@ const getNFL = async () => {
 			NFLteam2 = NFLteam2.replace(/\./g,' ');
 			combinedTeams = NFLteam1.concat(NFLteam2);	
 			if (data.data.events[b].competitions[0].competitors[0].winner) {
-				theWinner = team1;
+				theWinner = NFLteam1;
 			} else {
-				theWinner = team2;
+				theWinner = NFLteam2;
 			}
 			NFLpromises.push(cycleGroups("nfl", combinedTeams, theWinner));
 		}
@@ -376,9 +376,9 @@ const getNFL = async () => {
 			NBAteam2 = NBAteam2.replace(/\./g,' ');
 			combinedTeams = NBAteam1.concat(NBAteam2);	
 			if (data.data.events[c].competitions[0].competitors[0].winner) {
-				theWinner = team1;
+				theWinner = NBAteam1;
 			} else {
-				theWinner = team2;
+				theWinner = NBAteam2;
 			}
 			NBApromises.push(cycleGroups("nba", combinedTeams, theWinner));
 		}
