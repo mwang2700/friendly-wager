@@ -102,7 +102,7 @@
                 android:id="@+id/dline10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The list of games is updated every day at 8 AM Eastern Time. Games are checked for whether they've started or not every minute."
+                android:text="The list of games are first added at 1:10 AM Eastern time and updated periodically until 11 am. Games are checked for whether they've started or not every minute."
                 android:textSize="16sp"
                 android:padding="2dip"
                 android:layout_weight="1"

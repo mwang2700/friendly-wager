@@ -13,7 +13,7 @@
 
         <ImageView
             android:id="@+id/backgroundImageView"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -37,16 +37,17 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
-            app:layout_constraintVertical_bias="0.145" />
+            app:layout_constraintVertical_bias="0.024" />
 
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="338dp"
             android:layout_height="61dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:fontFamily="sans-serif"
@@ -55,10 +56,10 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="@+id/backgroundImageView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/backgroundImageView"
-            app:layout_constraintVertical_bias="0.256" />
+            app:layout_constraintTop_toBottomOf="@+id/usernameEditText"
+            app:layout_constraintVertical_bias="0.004" />
 
         <Button
             android:id="@+id/logInButton"
@@ -75,7 +76,7 @@
             android:id="@+id/signUpButton"
             android:layout_width="254dp"
             android:layout_height="50dp"
-            android:layout_marginTop="78dp"
+            android:layout_marginTop="15dp"
             android:onClick="toSignUp"
             android:text="Sign Up"
             app:layout_constraintEnd_toEndOf="parent"
@@ -88,6 +89,7 @@
             android:layout_width="254dp"
             android:layout_height="50dp"
             android:layout_marginTop="8dp"
+            android:onClick="resetPassword"
             android:text="Forgot Password"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
