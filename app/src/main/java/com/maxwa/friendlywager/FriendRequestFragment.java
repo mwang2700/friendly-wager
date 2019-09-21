@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,14 +76,8 @@ public class FriendRequestFragment extends Fragment implements RequestRecyclerAd
         dbRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot data: dataSnapshot.getChildren()) {
-                    String val = (String) data.getValue();
-                    if (!val.contains("@")) {
-                        username = val;
-                    } else {
-                        email = val;
-                    }
-                }
+                username = (String) dataSnapshot.child("username").getValue();
+                email = (String) dataSnapshot.child("email").getValue();
                 if (username != null) {
                     databaseReference = FirebaseDatabase.getInstance().getReference().child("requests").child(username);
 

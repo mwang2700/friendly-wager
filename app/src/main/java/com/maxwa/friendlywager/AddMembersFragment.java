@@ -76,8 +76,6 @@ public class AddMembersFragment extends Fragment implements GroupsAdapter.OnItem
         final DatabaseReference groupsRef = FirebaseDatabase.getInstance().getReference().child("groups").child(groupName);
 
         initializeRecycler();
-        // Get username
-
 
         DatabaseReference usernameRef = FirebaseDatabase.getInstance().getReference().child("users").child(mAuth.getUid());
         usernameRef.addListenerForSingleValueEvent(new ValueEventListener() {

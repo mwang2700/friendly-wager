@@ -47,7 +47,6 @@ public class ViewNBAFragment extends Fragment implements View.OnClickListener, V
 
     String username;
     String groupName;
-    String teamSelected;
 
     long points = 0;
     long currentAmount = 0;
@@ -197,7 +196,6 @@ public class ViewNBAFragment extends Fragment implements View.OnClickListener, V
     @Override
     public void onItemClick(final int position) {
         if (wagerList.get(position).getCommenceTime() > System.currentTimeMillis() / 1000L) {
-            final int pos = position;
             currentAmount = wagerList.get(position).getWagerAmount();
             DatabaseReference pointsRef = FirebaseDatabase.getInstance().getReference().child(groupName).child(username).child("points");
             pointsRef.addListenerForSingleValueEvent(new ValueEventListener() {
