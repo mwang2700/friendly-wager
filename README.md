@@ -9,7 +9,7 @@ Friendly Wager allows users to create fake, friendly wagers to compete in a grou
 
 Odds for the matches are updated frequently and are from real sportsbooks, allowing the point system to be a decent reflection of actual sports betting ability.
 
-Wagers are regularly graded automatically within 15 mintues after the sports matches are completed. 
+Wagers are regularly graded automatically within 15 minutes after the sports matches are completed. 
 
 ## Getting Started
 
