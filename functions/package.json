@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@google-cloud/logging": "^5.2.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "babel-eslint": "^10.0.2",
     "firebase-admin": "^8.3.0",
     "firebase-functions": "^3.1.0"
