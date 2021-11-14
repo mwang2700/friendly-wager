@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "512826808599",
+    "firebase_url": "https://friendly-wager-4fdbe.firebaseio.com",
+    "project_id": "friendly-wager-4fdbe",
+    "storage_bucket": "friendly-wager-4fdbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512826808599:android:cc0792b3a7452fa5",
+        "android_client_info": {
+          "package_name": "com.example.maxwa.friendlywager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512826808599-7ohgtlcg3864t437npmo8ajb901oo243.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH56_pLz01_Cb5RgcHEiK8DfY_opkVPhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512826808599-7ohgtlcg3864t437npmo8ajb901oo243.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512826808599:android:6cc9c898b89776f8",
+        "android_client_info": {
+          "package_name": "com.maxwa.friendlywager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512826808599-7ohgtlcg3864t437npmo8ajb901oo243.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH56_pLz01_Cb5RgcHEiK8DfY_opkVPhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512826808599-7ohgtlcg3864t437npmo8ajb901oo243.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

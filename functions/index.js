@@ -359,7 +359,7 @@ const getNFL = async () => {
 	return Promise.all(NFLpromises);
 } 
 
-/* const getNBAData = async () => {
+ const getNBAData = async () => {
 	try {
 		return await axios.get('http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard')
 	} catch (error) {
@@ -369,7 +369,7 @@ const getNFL = async () => {
 	}
 }
 
-const getNFL = async () => {
+const getNBA = async () => {
 	const data = await getNFLData();
 	
 	var numGames = data.data.events.length;
@@ -395,7 +395,7 @@ const getNFL = async () => {
 		}
 	}
 	return Promise.all(NBApromises);
-}  */
+}  
 
 exports.scheduledFunctionCrontab = functions.pubsub.schedule('10 1,6,8,10,11 * * *')
   .timeZone('America/New_York')
@@ -427,7 +427,8 @@ exports.scheduleFunctionCrontabThree = functions.pubsub.schedule('*/15 * * * *')
 		
 	return getMLB()
 	.then(getNFL())
-	.catch(error => {
+    .then(getNBA())
+    .catch(error => {
 		console.log(error)
 	});
 	
